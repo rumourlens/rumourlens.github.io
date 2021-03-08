@@ -1,0 +1,153 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Language" content="en-us">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>RumourLens</title>
+    <meta http-equiv="Page-Enter" content="revealTrans(Duration=1.0,Transition=3)">
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+    <style>
+        <!--
+        li.MsoNormal {
+            mso-style-parent: "";
+            margin-bottom: .0001pt;
+            font-size: 12.0pt;
+            font-family: "Times New Roman";
+            margin-left: 0in;
+            margin-right: 0in;
+            margin-top: 0in
+        }
+        -->
+    </style>
+
+</head>
+
+<BODY BGCOLOR=#FFFFFF background="images/bg.gif" LEFTMARGIN=0 TOPMARGIN=0 MARGINWIDTH=0 MARGINHEIGHT=0>
+    <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td align="center">
+                <table width="800" bgcolor="#FFFFFF">
+                    <tr>
+                        <td width="20"></td>
+                        <td align="center" valign="top" width="750">
+                            <table width="750" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+                                <tr>
+                                    <td class="mytitle">RumourLens</td>
+                                </tr>
+                                <tr>
+                                    <td class="subject" style="padding-top:0px; color: #000;">
+                                        <b>Early Rumour Detection with Multi-View Explanations</b>
+                                    </td>
+                                </tr>
+                                <tr bgcolor="#FF0000">
+                                    <td height="1px" style="padding:2px">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="subTitle" style="padding-top:25px">
+                                        I. Introduction
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="body">
+                                        Hundreds of thousands of rumours are spread every day. Innocent users, without proper alerts from algorithmic models, can accidentally spread rumours in an exponential wave of shares, posts and articles. While there is a plethora of research on early rumour detection, the detection results are not fully `early'. Against this background, we focus on providing explanations for users on suspicious rumours rather than providing explanations for binary detection results. Instead of post-mortem explanation, where explanations are generated in offline settings after having the full information on the detection results, we design early explainable measures that track and mark suspicious rumours via local and global anomaly indicators. This paper presents RumourLens, a system of early rumour detection with multi-view explanations. It supports early explanation measures, local view for individual entities, global view for rumor structures, and various types of explanations.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="subTitle">
+                                        II. Contributions
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="item">
+                                        <span><b>1. Early explanation framework:</b></span>
+                                        RumourLens captures early signals of potential rumours and explain them to prevent damage from occurring by flagging abnormal indicators for human attention.
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td class="item">
+                                        <span><b>2. Local indicators for individual entities:</b></span>
+                                        RumourLens features an efficient statistical model to reason on the anomalousness of entities and relations. It exploits the historical data of the entity/relation itself as well as the comparison between them to identify anomalous data points.
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td class="item">
+                                        <span><b>3. Global indicators for anomalous subgraphs:</b></span>
+                                        RumourLens features a subgraph search algorithm based on scan statistics to identify anomalous structures and explain the propagation pattern of a rumour. 
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="item">
+                                        <span><b>4. Various types of explanations:</b></span>
+                                        RumourLens provides a wide range of explanation measures, including feature-based, statistics-based, and graph-based.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="item">
+                                        <span><b>5. Exploratory data analytics:</b></span>
+                                        RumourLens gives control back to social media users by letting them explore the rumours themselves to raise awareness, making it more difficult to rumours to spread in the future.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="subTitle">
+                                        III. User Interface
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="item" style="padding-left: 0%;">
+                                        <img name="wui" src="images/rumourlens.png" width="100%"
+                                            alt="RumourLens User Interface" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="subTitle">
+                                        IV. Demonstration
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="item" style="padding-left: 10%;">
+                                        <iframe width="560" height="315" src="" 
+                                        frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="item" style="padding-top: 30px;">
+                                        <span><b>Source code:</b></span> <a target="_blank"
+                                            href="https://github.com/rumourlens/rumourlens">https://github.com/rumourlens/rumourlens</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td width="25"> </td>
+                    </tr>
+                    <tr height="20px">
+                        <td>
+                        </td>
+                    </tr>
+                    <tr bgcolor="#CCCCCC">
+                        <td height="1px" colspan="3" style="padding:0px;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" height="1px" width="757" colspan="3" bgcolor="#FFFFFF"
+                            style="padding:0px; margin-top: 0px;">
+                            <font color="#e2ebfe" face="Tahoma" style="FONT-SIZE: 8pt">
+                                <b>
+                                    <font color="#666666">© 2021 RumourLens </font>
+                                </b></font>&nbsp;
+                        </td>
+                    </tr>
+                    <tr bgcolor="#CCCCCC">
+                        <td height="10px" colspan="3" style="padding:0px;">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
