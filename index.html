@@ -51,7 +51,32 @@
                                 </tr>
                                 <tr>
                                     <td class="body">
-                                        Hundreds of thousands of rumours are spread every day. Innocent users, without proper alerts from algorithmic models, can accidentally spread rumours in an exponential wave of shares, posts and articles. While there is a plethora of research on early rumour detection, the detection results are not fully `early'. Against this background, we focus on providing explanations for users on suspicious rumours rather than providing explanations for binary detection results. Instead of post-mortem explanation, where explanations are generated in offline settings after having the full information on the detection results, we design early explainable measures that track and mark suspicious rumours via local and global anomaly indicators. This paper presents RumourLens, a system of early rumour detection with multi-view explanations. It supports early explanation measures, local view for individual entities, global view for rumor structures, and various types of explanations.
+                                        Hundreds of thousands of rumours emerge
+                                        every day. Algorithmic models shall
+                                        therefore support users of social
+                                        platforms and provide alerts to prevent
+                                        users from accidentally spreading
+                                        rumours. However, existing alerting
+                                        mechanisms fail to fully incorporate the
+                                        dynamic nature of social platforms,
+                                        i.e., they assume that rumours can be
+                                        characterized using a fixed set of
+                                        entities along with predefined
+                                        propagation patterns, and focus on
+                                        post-mortem explanations after a rumour
+                                        has been classified. This paper presents
+                                        RumourLens, a system that enables
+                                        immediate monitoring and tracking of
+                                        potential rumours as they emerge. To
+                                        this end, it identifies local anomalies
+                                        related to individual entities, as well
+                                        as global anomalies on the level of
+                                        subgraphs of a network of entities.
+                                        RumourLens provides various views on
+                                        such local and global anomalies, thereby
+                                        providing detailed explanations on
+                                        emerging rumours and supporting their
+                                        critical exploration.
                                     </td>
                                 </tr>
                                 <tr>
@@ -61,34 +86,47 @@
                                 </tr>
                                 <tr>
                                     <td class="item">
-                                        <span><b>1. Early explanation framework:</b></span>
-                                        RumourLens captures early signals of potential rumours and explain them to prevent damage from occurring by flagging abnormal indicators for human attention.
+                                        <span><b>1. Local anomaly indicators:</b></span>
+                                        RumourLens features an efficient
+                                        statistical model to reason on the
+                                        anomalousness of entities and their
+                                        relations. This model assesses the
+                                        evolution of entities and their
+                                        relations over time, as well as their
+                                        similarity with other entities and
+                                        relations.
                                     </td>
 
                                 </tr>
                                 <tr>
                                     <td class="item">
-                                        <span><b>2. Local indicators for individual entities:</b></span>
-                                        RumourLens features an efficient statistical model to reason on the anomalousness of entities and relations. It exploits the historical data of the entity/relation itself as well as the comparison between them to identify anomalous data points.
+                                        <span><b>2. Global anomaly indicators:</b></span>
+                                        RumourLens features a subgraph search
+                                        algorithm based on scan
+                                        statistics to
+                                        identify anomalous structures in a
+                                        social network.
                                     </td>
 
                                 </tr>
                                 <tr>
                                     <td class="item">
-                                        <span><b>3. Global indicators for anomalous subgraphs:</b></span>
-                                        RumourLens features a subgraph search algorithm based on scan statistics to identify anomalous structures and explain the propagation pattern of a rumour. 
+                                        <span><b>3. Early rumour detection:</b></span>
+                                        Based on the anomaly indicators,
+                                        RumourLens captures early signals of
+                                        potential rumours and flags them for
+                                        further assessment.
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="item">
-                                        <span><b>4. Various types of explanations:</b></span>
-                                        RumourLens provides a wide range of explanation measures, including feature-based, statistics-based, and graph-based.
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="item">
-                                        <span><b>5. Exploratory data analytics:</b></span>
-                                        RumourLens gives control back to social media users by letting them explore the rumours themselves to raise awareness, making it more difficult to rumours to spread in the future.
+                                        <span><b>4. Multi-view explanations for rumour exploration:</b></span>
+                                        RumourLens provides a wide range of
+                                        explanation measures, including those
+                                        based on features, general statistics,
+                                        and graph properties. As such, it
+                                        enables users to explore the
+                                        characteristics of the detected rumours.
                                     </td>
                                 </tr>
                                 <tr>
